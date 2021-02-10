@@ -1,0 +1,369 @@
+@font-face {
+    font-family: vazir;
+    src: url(./asset/fonts/Vazir-Regular-FD.woff);
+}
+@font-face {
+    font-family: "vazir thin";
+    src: url(./asset/fonts/Vazir-Thin-FD.woff);
+}
+
+@font-face {
+    font-family: "vazir light";
+    src: url(./asset/fonts/Vazir-Light-FD.woff);
+}
+@font-face {
+    font-family: "vazir bold";
+    src: url(./asset/fonts/Vazir-Bold-FD.woff);
+}
+@font-face {
+    font-family: "vazir black";
+    src: url(./asset/fonts/Vazir-Black-FD.woff);
+}
+@font-face {
+    font-family: "vazir medium";
+    src: url(./asset/fonts/Vazir-Medium-FD.woff);
+}
+
+*{
+    font-family: vazir;
+    font-size : 17px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin:30px;
+}
+
+.login{
+    margin:auto;
+    width: 300px;
+    margin-top: 120px;
+}
+
+.login-input-label{
+    font-family: "vazir medium";
+    color:#1565c0;
+    margin-top: 100px;
+    margin-right:10px;
+}
+
+.login-input{
+    background-color: #e6ecf7;
+    border: 0;
+    border-radius: 15px;
+    padding: 13px 15px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.login-submit{
+    background-color: #304ffe;
+    padding: 10px 30px;
+    font-family: "vazir bold";;
+    border : 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-register{
+    padding: 10px 30px;
+    font-family: "vazir bold";;
+    border : 0;
+    border-radius: 10px;
+    color: #304ffe;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#login_register_page .warning {
+    margin-top: 60px;
+    text-align: center;
+}
+.login-button{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+
+.main{
+    display: grid;
+    max-width: 1500px;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 4fr;
+    padding: 40px;
+    margin: auto;
+}
+
+.main .right-sidebar .item{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 180px;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+
+
+}
+.main .right-sidebar .item .icon-svg{
+    height: 35px;
+}
+
+.main .right-sidebar .text{
+    margin-right: 20px;
+}
+.main .right-sidebar .text-css{
+    font-family: "Vazir Medium";
+    font-size: 20px;
+}
+
+.main .right-sidebar .item:hover{
+    background-color: #888ca5;
+    color: #fff;
+    fill: #fff;
+}
+
+.main .right-sidebar #item-selected{
+    color: #304ffe;
+    fill: #304ffe;
+    background-color: #fff;
+}
+
+.main .content .quiz-view-mode{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.main .content .quiz-view-mode .item{
+    padding : 0px 10px;
+    font-family: "vazir medium";
+    color : #888ca5;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: all 200ms ease-in-out;
+
+}
+
+.main .content .quiz-view-mode .item-selected{
+    background-color: #304ffe;
+    color : #fff;
+}
+
+.main .content .quiz-view-mode .item:hover{
+    background-color: #888ca5;
+    color: #fff;
+    fill: #fff;
+}
+
+.main .content .quiz-view-mode .item-selected:hover{
+    background-color: #304ffe;
+    color : #fff;
+}
+
+
+.main .content .quizzes .item{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.06);
+}
+
+.main .content .quizzes .item .information{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+    align-items: center;
+    padding : 20px 30px;
+    
+}
+
+.main .content .quizzes .item .information .attribute{
+    text-align: center;
+}
+
+.main .content .quizzes .item .information .name{
+    font-family: "vazir medium";
+    font-size: 20px;
+    color: #304ffe;
+}
+
+.main .content .quizzes .item .information .attribute .attr-name {
+    font-family: "vazir";
+    font-size: 14px;
+    color: #34425b;
+    margin-bottom: 10px;
+}
+
+.main .content .quizzes .item .information .attribute .attr-value {
+    font-family: "vazir medium";
+    font-size: 18px;
+    color: #34425b;
+}
+
+.main .content .quizzes .item .quiz-action{
+    background-color: #304ffe;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.main .content .quizzes .item .quiz-action svg{
+    fill: #fff;
+    margin: 16%;
+
+}
+
+.main .content .quizzes .item-disabled .information .name{
+    font-family: "vazir medium";
+    font-size: 20px;
+    color: #888ca5;
+}
+
+.main .content .quizzes .item-disabled .quiz-action{
+    text-align: center;
+    background-color:  #888ca5;
+    cursor: auto;
+}
+.main .content .quizzes .item-disabled .quiz-action svg{
+    fill: #fff;
+    margin: 16%;
+
+}
+
+
+/* question file */
+.question{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    max-width: 1500px;
+    grid-gap: 60px;
+    padding: 40px;
+    margin: auto;
+}
+
+.question .content .header{
+    display:flex;
+    color: #353535;
+    justify-content: space-between;
+    border-bottom: 3px solid #f7f8ff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.question .content .question-image img{
+    max-width: 100%;
+
+}
+.question .content .answer{
+    margin-top:40px;
+    margin-right:40px;
+}
+.question .content .answer .multipleoption .option{
+    margin: 20px 0;
+
+}
+
+.question .content .answer .multipleoption label{
+    font-size: 16px;
+    font-family: 'vazir medium';
+}
+
+.question .content .answer .textual #answer-text{
+    max-width: 95%;
+    width: 95%;
+    border: 2px solid #304ffe;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    min-width: 95%;
+    min-height: 100px;
+}
+
+/* The container */
+.option {
+    display: block;
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    font-size: 22px;
+  
+  }
+  
+  .option label {
+    cursor: pointer;  
+  }
+
+  /* Hide the browser's default radio button */
+  .option input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border: 3px solid #304ffe;
+    border-radius: 50%;
+  }
+  
+
+   /* When the radio button is checked, add a blue background */
+  .option input:checked ~ .checkmark {
+    background: radial-gradient(circle, rgba(48,79,254,1) 40%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 100%);
+  }
+
+.question .left-sidebar {
+      text-align: center;
+
+}
+
+.question .left-sidebar .information .name{
+    font-family: 'vazir bold';
+}
+.question .left-sidebar .information .teacher-name{
+    margin-top: 8px;
+    font-size: 15px;
+}
+.question .left-sidebar .next-question-btn{
+    color: #fff;
+    background-color: #304ffe;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top:30px;
+    cursor: pointer;
+}
+
+.general-boutton{
+    text-align: center;
+    color: #fff;
+    background-color: #304ffe;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top:30px;
+    cursor: pointer;
+}
+
+.quiz-finished{
+    text-align: center;
+    padding: 50px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.question .header .remaining-time{
+    display: flex;
+    direction: ltr;
+
+}

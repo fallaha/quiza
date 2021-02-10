@@ -1,0 +1,36 @@
+﻿<html dir="rtl">
+
+<head>
+    <title>
+        ورود
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="asset/logo.png" />
+        </div>
+    </header>
+    <div id="root">
+        <div id="login_register_page"> 
+            <div class="login">
+                <form method="GET">
+                    <lable class="login-input-label">نام کاربری</lable></br>
+                    <input class="login-input" type="text" name="username" /></br>
+                    <label class="login-input-label">رمز عبور</label></br>
+                    <input class="login-input" type="password" name="password" /></br>
+                    <div class="login-button">
+                        <input class="login-submit" onclick="login_clicked()" type="button" value="ورود"  /> 
+                        <input class="login-register" onclick="register_page()" type="button" value="ثبت نام" /> 
+                    </div>
+                </form>
+                <div class="warning"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
